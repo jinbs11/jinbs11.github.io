@@ -1,0 +1,127 @@
+body {
+    background-color: rgb(29, 29, 29);
+    overflow: scroll;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+h1 {
+    color: white;
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    text-align: left;
+    margin: 30px
+}
+
+
+.container {
+    width: 90%; /* Voit määrittää haluamasi leveyden */
+    height: 100%; /* Aseta containerin korkeus koko näytön korkeudelle */
+    display: flex; /* Käytä flexboxia sisällön keskittämiseen pystysuunnassa */
+    justify-content: flex-start; /* Aseta sisältö ylös pystysuunnassa */
+    margin-top: 0; /* Poista marginaali ylhäältä */
+    margin: auto;
+    flex-direction: column;
+    overflow-y: hidden;
+    position: relative;
+}
+
+.content {
+    width: 500px;
+    position: absolute;
+    align-self: center;
+    top: 25px;
+}
+
+.list {
+    list-style: none;
+    color: white;
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    cursor: pointer;
+    font-size: 17px;
+    flex-direction: row;
+}
+  
+.list li {
+    display: inline-block; /* Aseta listakohteet vierekkäin */
+    margin-right: 25px; /* Lisää hieman väliä kohteiden väliin */
+}
+
+.list li:hover {
+    font-weight: 600;
+
+}
+
+.content1 {
+    margin-top: 70px;
+}
+
+h2 {
+    color: white;
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 40px;
+    margin-left: 30px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+p {
+    color: white;
+    font-family: "Kanit", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 18px;
+    margin-left: 30px; 
+    margin-top: 20;
+    margin-bottom: 0;
+}
+
+.graph {
+    color: white;
+    font-family: "Kanit", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 25px;
+    margin-left: 250px; 
+    margin-top: 1px;
+    margin-bottom: 0;
+}
+
+.somet {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+    display: inline-block; /* Aseta listakohteet vierekkäin */
+    margin-right: 15px;
+    overflow-x: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.somet:hover {
+    transform: scale(1.08);
+}
+
+.somecontainer {
+    background-color: rgb(40, 40, 40);
+    position: absolute;
+    align-self: right;
+    top: 25px;
+    height: 50px;
+    width: 190px;
+    justify-content: center;
+    align-items: center;
+    right: 0;
+    display: flex;
+    border-radius: 5px;
+    overflow-x: hidden;
+}
+
+
