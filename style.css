@@ -149,19 +149,50 @@ h3 {
     /* background-color: white; */
     margin-left: 150px;
     margin-right: 150px;
-    height: 450px;
+    height: 170px;
     overflow: hidden;
-    justify-content: center;
+    display: flex;                /* Asetetaan flexboxilla projektit vierekkäin */
+    justify-content: space-around;
 }
 
 .allProjects {
-    background-color: rgb(255, 255, 255);
+    /* background-color: rgb(142, 0, 0); */
     width: 350px;
     margin-left: 40px;
     margin-top: 20px;
-    display: inline-block;
     align-content: center;
     border-radius: 5px;
+    display: flex;
+    flex-direction: column;   
+}
+
+.project1 {
+    width: 100%;
+    height: 120px;
+    align-content: center;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;  /* Keskitys vaakasuunnassa */
+    background-image: url(Kuvat/Projekti1.png);
+    background-position-x: center;
+    background-position-y: 45%;
+    background-size: 100%;
+    transition: transform 0.3s ease; 
+}
+
+.project1:hover {
+    transform: scale(1.02);
+}
+
+.p1-text {
+    color: rgb(255, 255, 255);
+    font-family: "Kanit", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 20px;
+    margin-top: 1px;
+    margin-bottom: 5px;
+    text-align: center;
 }
 
 .section3 {
@@ -180,4 +211,31 @@ h3 {
     height: 450px;
     overflow: hidden;
     justify-content: center;
+}
+
+.section4 {
+    background-color: rgb(35, 35, 35);
+    width: auto;
+    height: 600px;
+    flex-direction: column;
+    overflow-y: hidden;
+    position: relative;
+}
+
+.contact-text {
+    background-color: rgb(255, 0, 0);
+    margin-left: 150px;
+    margin-right: 150px;
+    height: 450px;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.section5 {
+    background-color: rgb(29, 29, 29);
+    width: 100%;
+    height: 100px;
+    flex-direction: column;
+    overflow-y: hidden;
+    position: relative;
 }
