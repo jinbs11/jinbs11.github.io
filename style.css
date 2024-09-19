@@ -196,39 +196,77 @@ h3 {
 }
 
 .section3 {
-    background-color: rgb(35, 35, 35);
+    background-color: rgb(40, 40, 40);
     width: auto;
-    height: 600px;
+    height: auto;
     flex-direction: column;
     overflow-y: hidden;
     position: relative;
 }
 
 .education-text {
-    background-color: blue;
-    margin-left: 150px;
-    margin-right: 150px;
-    height: 450px;
+    background-color: rgb(40, 40, 40);
+    height: 350px;
+    width: 100%;
+    margin-bottom: 0;
     overflow: hidden;
     justify-content: center;
+    border-radius: 5px;
+}
+
+.education-text1 {
+    color: rgb(255, 255, 255);
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    text-align: left;
+    margin-left: 150px;
+    margin-right: 150px;
 }
 
 .section4 {
-    background-color: rgb(35, 35, 35);
-    width: auto;
-    height: 600px;
+    background-color: rgb(40, 40, 40);
+    width: 100%;
+    height: 260px;
     flex-direction: column;
     overflow-y: hidden;
     position: relative;
 }
 
 .contact-text {
-    background-color: rgb(255, 0, 0);
+    /* background-color: rgb(255, 0, 0); */
     margin-left: 150px;
     margin-right: 150px;
-    height: 450px;
+    height: 150px;
     overflow: hidden;
     justify-content: center;
+}
+
+.contact-text1 {
+
+    color: rgb(255, 255, 255);
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 25px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.contact-text2 {
+
+    color: rgb(255, 255, 255);
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: left;
 }
 
 .section5 {
