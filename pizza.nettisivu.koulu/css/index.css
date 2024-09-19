@@ -1,0 +1,7 @@
+body {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.footer {
+    margin-top: 50px;
+}

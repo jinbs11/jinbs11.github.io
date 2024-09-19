@@ -1,0 +1,77 @@
+body {
+  background-color: #f4f4f4;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  width: 25%;
+  margin: auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.virheilmoitus {
+  color: red;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+h2 {
+  text-align: center;
+  color: #e30505;
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.form-input {
+  margin-bottom: 15px;
+}
+
+input[type='text'],
+input[type='password'] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+button[type='button'] {
+  background-color: #e30505;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.31s ease;
+}
+
+button[type='button']:hover {
+  background-color: #c90b0b;
+}
+
+.back-button {
+  background-color: #fff;
+  color: #e30505;
+  border: 1px solid #e30505;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #c90b0b;
+  color: #fff;
+}

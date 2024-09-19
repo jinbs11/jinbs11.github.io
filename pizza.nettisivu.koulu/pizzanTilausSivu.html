@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <!-- basic -->
+    <title>Pizzan tilaussivu</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <!-- site metas -->
+    <link rel = "icon" href = 
+"images/logoo.png" 
+        type = "image/x-icon">
+    <script
+        type="text/javascript"
+        language="javascript"
+        src="index.js"
+    ></script>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- owl css -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <!-- style css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tilaussivu.css">
+    <!-- responsive-->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- awesome fontfamily -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+    <script type="text/javascript" language="javascript" src="js/valmiinPizzanTilausSivu.js"></script>
+</head>
+<body>
+    <div class="sidebar">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div id="dismiss">
+                <i class="fa fa-arrow-left"></i>
+            </div>
+            <ul class="list-unstyled components">
+              <li>
+                <a href="index.html">Koti</a>
+              </li>
+              <li class="active"> 
+                <a href="pizzanTilausSivu.html">Pizzan tilaus</a>
+              </li>
+              <li>
+                <a href="fantasiaPizza.html">Fantasia pizza</a>
+              </li>
+              <li>
+                <a href="ostoskori.html">Ostoskori</a>
+              </li>
+              <li>
+                <a href="palaute.html">Anna palautetta</a>
+              </li>
+            </ul>
+        </nav>
+    </div>
+<div id="content">
+<!-- Sidebar -->
+
+    <div class="bg">
+      <!--Otsikko alku-->
+      <h1>PIZZAN TILAUS</h1>
+      <!--Otsikko loppu-->
+
+      <!--Pizza valikko alku-->
+          <div class="pizza1">
+            <img src="images/fantasia-pizza.jpg" alt="pizza1" height="180px" width="260.4px" />
+            <h2>Fantasia Pizza</h2>
+            <p>Oletko koskaan halunnut syödä pizzaa missä on pelkästään sinun valitsemia täytteitä?<br>
+            Ei tarvitse katsoa pidemmälle, sillä me Makuparatiisissa teemme minkä pitsan sinä ikinä haluat.
+            </p>
+            <div class="shadow">
+              <div class="napit">
+                <div class="btn1">
+                  <div class="plusbtn">
+                    <button type="button" class="ympyra" onclick="LisaaPizza('fantasia-maara')">+</button>
+                  </div>
+                  <div class="maara">
+                    <p class="montako" id="fantasia-maara">0</p>
+                  </div>
+                  <div class="miinusbtn">
+                    <button type="button" class="miinusympyra" onclick="VahennaPizza('fantasia-maara')">-</button>
+                  </div>
+                  <div class="hinta">
+                    <p class="fantasia-hintanum">10.00€</p>
+                  </div>
+                </div>
+                <a href="fantasiaPizza.html">
+                  <button type="button" class="btn">Valitse täytteet</button>
+                </a>
+                  <div class="popup-wrapper">
+                    <div class="popup" id="popup">
+                      <div class="close-buttn">
+                        <button type="button" class="close-button" onclick="closePopup()">&#8249; Takaisin</button>
+                      </div>
+                      <img src="images/fantasia-pizza.jpg" alt=""/>
+                      <div class="popup-header">
+                        <h2>fantasia-pizza</h2>
+                        <div class="popup-info">
+                          <p>Voit valita omat täytteet:</p>
+                        </div>
+                      </div>
+                      <div class="container">
+                        <div class="fantasia-buttn">
+                          <button type="button" onclick="window.location.href='fantasiaPizza.html'" class="to-fantasia">LUO OMA PIZZA</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <script src="js/popup.js"></script>
+                <div class="btn1">
+                </div>
+              </div>
+            </div>
+          </div>
+      <div class="pizza2">
+        <img src="images/Pepperoni-pizza1.jpg" alt="pepperoni-pizza" height="180px" width="260.4px" />
+        <h2>Pepperoni</h2>
+        <p>Tämä pizza on ehdoton klassikkoherkku, joka saa veden herahtamaan kielelle pelkästä ajatuksesta!</p>
+        <label for="suuripohjapepperoni">Isompi pohja</label>
+        <input type="checkbox" id="suuripohjapepperoni">
+        <label id="labelGLU"for="gluteenitonValittupepperoni">Gluteeniton pohja (2€)</label>
+        <input type="checkbox" id="gluteenitonValittupepperoni">
+        <div class="shadow">
+          <div class="napit">
+            <button type="button" onclick="pizzaJuttu('pepperoni')" class="btn">Lisää tuote</button>
+            <div class="btn1">
+              <div class="plusbtn">
+                <button type="button" class="ympyra" onclick="LisaaPizza('pepperoni-maara')">+</button>
+              </div>
+              <div class="maara">
+                <p class="montako" id="pepperoni-maara">0</p>
+              </div>
+              <div class="miinusbtn">
+                <button type="button" class="miinusympyra" onclick="VahennaPizza('pepperoni-maara')">-</button>
+              </div>
+              <div class="hinta">
+                <p class="pepperoni-hintanum">10.50€</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pizza3">
+        <img src="images/jalapeno_pizza.jfif" alt="jalopeno-pizza" height="180px" width="260.4px" />
+        <h2>Tulinen Tulivuori</h2>
+        <p>Tämä pizza on kuin räjähtävä makuhermojen ilotulitus, joka saa suun sekä sydämen sykkimään jokaisen herkullisen suupalan kohdalla.</p>
+        <label for="suuripohjatulinen">Isompi pohja</label>
+        <input type="checkbox" id="suuripohjatulinen">
+        <label id="labelGLU"for="gluteenitonValittutulinen">Gluteeniton pohja (2€)</label>
+        <input type="checkbox" id="gluteenitonValittutulinen">
+        <div class="shadow">
+          <div class="napit">
+            <button type="button" onclick="pizzaJuttu('tulinen')" class="btn">Lisää tuote</button>
+            <div class="btn1">
+              <div class="plusbtn">
+                <button type="button" class="ympyra" onclick="LisaaPizza('tulinen-maara')">+</button>
+              </div>
+              <div class="maara">
+                <p class="montako" id="tulinen-maara">0</p>
+              </div>
+              <div class="miinusbtn">
+                <button type="button" class="miinusympyra" onclick="VahennaPizza('tulinen-maara')">-</button>
+              </div>
+              <div class="hinta">
+                <p class="tulinen-hintanum">12.75€</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pizza4">
+        <img src="images/BBQ-kana.jpg" alt="BBQ-kana" height="180px" width="260.4px" />
+        <h2>BBQ Kana</h2>
+        <p>Tämä herkullinen BBQ-kana pizza tarjoaa täydellisen makuelämyksen, joka saa makunystyräsi tanssimaan riemusta!</p>
+        <label for="suuripohjabbq">Isompi pohja</label>
+        <input type="checkbox" id="suuripohjabbq">
+        <label id="labelGLU"for="gluteenitonValittubbq">Gluteeniton pohja (2€)</label>
+        <input type="checkbox" id="gluteenitonValittubbq">
+        <div class="shadow">
+          <div class="napit">
+            <button type="button" onclick="pizzaJuttu('bbq')" class="btn">Lisää tuote</button>
+            <div class="btn1">
+              <div class="plusbtn">
+                <button type="button" class="ympyra" onclick="LisaaPizza('bbq-maara')">+</button>
+              </div>
+              <div class="maara">
+                <p class="montako" id="bbq-maara">0</p>
+              </div>
+              <div class="miinusbtn">
+                <button type="button" class="miinusympyra"  onclick="VahennaPizza('bbq-maara')">-</button>
+              </div>
+              <div class="hinta">
+                <p class="bbq-hintanum">11.20€</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pizza5">
+        <img src="images/kasvis_pizza.webp" alt="kasvis-pizza" height="180px" width="260.4px" />
+        <h2>Vihreä keidas</h2>
+        <p>Tämä Vihreä Keidas pizza on täynnä raikasta makua ja terveellisiä vihanneksia, jotka tekevät siitä täydellisen valinnan herkutteluhetkiin!</p>
+        <label for="suuripohjakasvis">Isompi pohja</label>
+        <input type="checkbox" id="suuripohjakasvis">
+        <label id="labelGLU"for="gluteenitonValittukasvis">Gluteeniton pohja (2€)</label>
+        <input type="checkbox" id="gluteenitonValittukasvis">
+        <div class="shadow">
+          <div class="napit">
+            <button type="button" onclick="pizzaJuttu('kasvis')" class="btn">Lisää tuote</button>
+            <div class="btn1">
+              <div class="plusbtn">
+                <button type="button" class="ympyra" onclick="LisaaPizza('kasvis-maara')">+</button>
+              </div>
+              <div class="maara">
+                <p class="montako" id="kasvis-maara">0</p>
+              </div>
+              <div class="miinusbtn">
+                <button type="button" class="miinusympyra" onclick="VahennaPizza('kasvis-maara')">-</button>
+              </div>
+              <div class="hinta">
+                <p class="kasvis-hintanum">16.80€</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pizza6">
+        <img src="images/herkullinen-juustoinen-pizza.webp" alt="herkullinen-juustoinen-pizza" height="180px" width="260.4px" />
+        <h2>Juustolampi</h2>
+        <p>Juustolampi pizza tarjoaa täyteläisen makuelämyksen, jossa herkullinen juusto yhdistyy raikkaaseen vihreään pestoon.</p>
+        <label for="suuripohjajuusto">Isompi pohja</label>
+        <input type="checkbox" id="suuripohjajuusto">
+        <label id="labelGLU"for="gluteenitonValittujuusto">Gluteeniton pohja (2€)</label>
+        <input type="checkbox" id="gluteenitonValittujuusto">
+        <div class="shadow">
+          <div class="napit">
+            <button type="button" onclick="pizzaJuttu('juusto')" class="btn">Lisää tuote</button>
+            <div class="btn1">
+              <div class="plusbtn">
+                <button type="button" class="ympyra" onclick="LisaaPizza('juusto-maara')">+</button>
+              </div>
+              <div class="maara">
+                <p class="montako" id="juusto-maara">0</p>
+              </div>
+              <div class="miinusbtn">
+                <button type="button" class="miinusympyra" onclick="VahennaPizza('juusto-maara')">-</button>
+              </div>
+              <div class="hinta">
+                <p class="juusto-hintanum">11.30€</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pizza7">
+        <img src="images/Hawaiian-pizza.jpg" alt="hawaiian-pizza" height="180px" width="260.4px" />
+        <h2>Hawaii</h2>
+        <p>Hawaii pizza on täydellinen yhdistelmä makeaa ananasta, suolaista kinkkua ja sulavaa juustoa, joka saa makunystyräsi syttymään!</p>
+        <label for="suuripohjahawaii">Isompi pohja</label>
+        <input type="checkbox" id="suuripohjahawaii">
+        <label id="labelGLU"for="gluteenitonValittuhawaii">Gluteeniton pohja (2€)</label>
+        <input type="checkbox" id="gluteenitonValittuhawaii">
+        <div class="shadow">
+          <div class="napit">
+            <button type="button" onclick="pizzaJuttu('hawaii')" class="btn">Lisää tuote</button>
+            <div class="btn1">
+              <div class="plusbtn">
+                <button type="button" class="ympyra" onclick="LisaaPizza('hawaii-maara')">+</button>
+              </div>
+              <div class="maara">
+                <p class="montako" id="hawaii-maara">0</p>
+              </div>
+              <div class="miinusbtn">
+                <button type="button" class="miinusympyra" onclick="VahennaPizza('hawaii-maara')">-</button>
+              </div>
+              <div class="hinta">
+                <p class="hawaii-hintanum">11.00€</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pizza8">
+        <img src="images/lihan-pizza.jpg" alt="lihan-pizza" height="180px" width="260.4px" />
+        <h2>Lihaisa Herkku</h2>
+        <p>Lihaisa Herkkupizza on lihansyöjän unelma, jossa suussa sulava juusto yhdistyy mehevään jauhelihaan, savuisaan pepperoniin ja kinkkuun!</p>
+        <label for="suuripohjaliha">Isompi pohja</label>
+        <input type="checkbox" id="suuripohjaliha">
+        <label id="labelGLU"for="gluteenitonValittuliha">Gluteeniton pohja (2€)</label>
+        <input type="checkbox" id="gluteenitonValittuliha">
+        <div class="shadow">
+          <div class="napit">
+            <button type="button" onclick="pizzaJuttu('liha')" class="btn">Lisää tuote</button>
+            <div class="btn1">
+              <div class="plusbtn">
+                <button type="button" class="ympyra" onclick="LisaaPizza('liha-maara')">+</button>
+              </div>
+              <div class="maara">
+                <p class="montako" id="liha-maara">0</p>
+              </div>
+              <div class="miinusbtn">
+                <button type="button" class="miinusympyra" onclick="VahennaPizza('liha-maara')">-</button>
+              </div>
+              <div class="hinta">
+                <p class="liha-hintanum">12.50€</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Pizza valikko loppu-->
+      <!-- footer -->
+      <fooetr>
+        <div class="footer">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="footer_logo">
+                      <a href="index.html"><img src="images/logoo.png" alt="logo"></a>
+                    </div>
+                </div>
+                    <div class="col-md-12">
+                        <ul class="lik">
+                            <li class="active"> <a href="index.html">Koti</a></li>
+                            <li> <a href="palaute.html">Palaute</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        
+    </fooetr>
+      <!-- end footer -->
+    </div>
+    <div>
+    <div id="content">
+    <!-- header -->
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="full">
+                        <a class="logo" id="tosihyvalogo" href="index.html"><img src="images/logoo.png" alt="#" /></a>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="full">
+                        <div class="right_header_info">
+                            <ul>
+                                <li class="button_user"><a class="button active" id="kirjauduNappi" href="kirjautuminen.html">Kirjaudu</a><a class="button" id="rekisteroiNappi" href="rekisterointi.html">Rekisteröidy</a><a class="button" id="kirjauduUlosNappi" onclick="ulos()" href="#">Kirjaudu ulos</a></li>
+                                <li id="ostoskori"><button type="button" onclick="window.location.href='ostoskori.html'"><img style="margin-right: 5px; margin-left: 5px;" src="images/shopping-cart.jpg" alt="#" width="30" height="30"></button></li>
+                                <li>
+                                    <button type="button" id="sidebarCollapse">
+                                        <img src="images/menu_icon.png" alt="#">
+                                    </button>
+                                </li>
+                                <li><p id="käyttäjäNimiOikealaita" style="font-size: x-large;"></p></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- end header -->
+    
+    </div>
+
+    </div>
+    </div>
+    <!-- Javascript files-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/custom.js"></script>
+     <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    
+     <script src="js/jquery-3.0.0.min.js"></script>
+     <script src="index.js"></script>
+   <script type="text/javascript">
+        $(document).ready(function() {
+            $("#sidebar").mCustomScrollbar({
+                theme: "minimal"
+            });
+
+            $('#dismiss, .overlay').on('click', function() {
+                $('#sidebar').removeClass('active');
+                $('.overlay').removeClass('active');
+            });
+
+            $('#sidebarCollapse').on('click', function() {
+                $('#sidebar').addClass('active');
+                $('.overlay').addClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+        });
+    </script>
+
+    <style>
+    #owl-demo .item{
+        margin: 3px;
+    }
+    #owl-demo .item img{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    </style>
+
+     
+      <script>
+         $(document).ready(function() {
+           var owl = $('.owl-carousel');
+           owl.owlCarousel({
+             margin: 10,
+             nav: true,
+             loop: true,
+             responsive: {
+               0: {
+                 items: 1
+               },
+               600: {
+                 items: 2
+               },
+               1000: {
+                 items: 5
+               }
+             }
+           })
+         })
+      </script>
+
+</body>
+
+</html>

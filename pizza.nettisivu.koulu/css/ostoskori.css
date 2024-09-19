@@ -1,0 +1,327 @@
+link {
+    display: none;
+}
+
+body {
+    font-family: 'poppins', sans-serif;
+    overflow-x: hidden;
+    min-height: 50%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.ylapalkki {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    left: 0;
+    top: 0;
+    background: rgb(0, 0, 0);
+    display: inline-block;
+    vertical-align: middle;
+    overflow: none;
+    box-shadow: 3px 3px 4px 3px #00000069;
+}
+
+table {
+    width: 90%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+    background-color: #ff2424;
+    border-radius: 10px;
+}
+
+th,
+td {
+  text-align: center;
+  font-size: large;
+  color: #111;
+}
+
+#otsikko {
+    font-size: 35px;
+}
+
+#toimitusosoite {
+    width: 20%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    height: 20%;
+    border-radius: 20vh;
+}
+
+
+/* --------------------------------------------------- SIDEBAR STYLE ----------------------------------------------------- */
+#sidebar {
+    width: 280px;
+    position: fixed;
+    top: 0;
+    left: -280px;
+    height: 100vh;
+    z-index: 999;
+    background: #fff;
+    color: #fff;
+    transition: all 0.3s;
+    overflow-y: scroll;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+#sidebar.active {
+    left: 0;
+}
+#dismiss {
+    width: 35px;
+    height: 35px;
+    line-height: 34px;
+    text-align: center;
+    background: #111;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+#dismiss:hover {
+    background: #111;
+    color: #fff;
+}
+.overlay {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 998;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+.overlay.active {
+    display: block;
+    opacity: 1;
+}
+#sidebarCollapse {
+    background: transparent;
+    padding: 0;
+    border: none;
+}
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: #6d7fcc;
+}
+#sidebar ul.components {
+    padding: 55px 0;
+}
+#sidebar ul p {
+    color: #fff;
+    padding: 10px;
+}
+#sidebar ul li a {
+    padding: 10px 25px;
+    font-size: 1.3em;
+    display: block;
+    font-weight: 300;
+}
+#sidebar ul li a:hover {
+    color: #fff;
+    background: #d80f0f;
+}
+#sidebar ul li.active > a, a[aria-expanded="true"] {
+    color: #fff;
+    background: #d80f0f;
+}
+a[data-toggle="collapse"] {
+    position: relative;
+}
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: #6d7fcc;
+}
+ul.CTAs {
+    padding: 20px;
+}
+ul.CTAs a {
+    text-align: center;
+    font-size: 0.9em !important;
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+a.download {
+    background: #fff;
+    color: #7386D5;
+}
+a.article, a.article:hover {
+    background: #6d7fcc !important;
+    color: #fff !important;
+}
+/* --------------------------------------------------- SIDEBAR STYLE END ----------------------------------------------------- */
+
+.li-ostos {
+    height:0;
+}
+
+.bg {
+    min-width: 100px;
+}
+
+.otsikko {
+    font-size: 50px;
+    text-align: center;
+    margin-top: 110px;
+}
+.tilaa-btn {
+    color: #e30505;
+    border: 1px solid #e30505;
+    border-radius: 5px;
+    padding: 3px 50px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position:absolute;
+    right: 30px;
+    bottom: 230px;
+}
+
+.tilaa-btn:hover .tilaa-button {
+    color: #fff;
+}
+
+.tilaa-btn:hover {
+    background-color: #c90b0b;
+    color: #fff;
+}
+
+.tilaa {
+    font-size: 30px;
+    text-align: right;
+    transform: translate(-50% -50%)
+}
+
+button#tyhjennäOstoskori {
+    background-color: #fff;
+    color: #ff0000;
+    border: 1px solid #ff0000;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px; 
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: relative;
+    top: 10px;
+}
+
+button#tyhjennäOstoskori:hover {
+    background-color: #c90b0b;
+    color: #fff;
+}
+
+button#tilaa {
+    background-color: #fff;
+    color: #00ff1a;
+    border: 1px solid #4dff00;
+    border-radius: 5px;
+    padding: 10px 50px;
+    left: -45%;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: relative;
+    top: 10px;
+}
+
+button#tilaa:hover {
+    background-color: #28c90b;
+    color: #fff;
+}
+
+.kuljetustavat {
+    background-color: #fff;
+    color: #ff0000;
+    border: 1px solid #ff0000;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.takaisin-btn {
+    color: #e30505;
+    border: 1px solid #e30505;
+    border-radius: 5px;
+    padding: 3px 50px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position:absolute;
+    left: 30px;
+    top: 110px;
+}
+
+.takaisin-btn:hover {
+    background-color: #c90b0b;
+    color: #fff;
+}
+/*JUOMAT*/
+.juomat {
+    position: absolute;
+    top: 125px;
+    right: 100px;
+}
+
+.juomat .options-container {
+    padding: 5px;
+    background-color: #ff2424;
+    border-radius: 5px;
+    top: 100px;
+    position: relative;
+    padding-right: 55px;
+    right: -70px;
+}
+
+.selected {
+    color: #111;
+}
+
+label.option {
+    color: #111;
+}
+
+.juomat .option {
+    padding: 5px;
+    padding-top: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+
+.juoma-hinta {
+    position: absolute;
+    top: 20px;
+    right: -50px;
+}
+
+.option {
+    position: relative;
+}

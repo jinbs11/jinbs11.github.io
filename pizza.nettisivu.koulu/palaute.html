@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <title>Makuparatiisi - Pizzapalaute</title>
+     <link rel = "icon" href = 
+"images/logoo.png" 
+        type = "image/x-icon">
+    <link rel="stylesheet" type="text/css" href="css/palaute.css">
+</head>
+
+<body> 
+    <div class="container">
+        <h1>Pizzapalaute</h1>
+        <form>
+            <label for="rating">Tyytyväisyyden taso (1-5)</label>
+            <input type="number" id="rating" name="rating" min="1" max="5" required>
+
+            <label for="feedback">Teksipalaute</label>
+            <textarea id="feedback" name="feedback" rows="5"></textarea>
+
+            <label for="email">Sähköposti</label>
+            <input type="email" id="email" name="email" required>
+
+        </form>
+        <button type="submit" onclick="tarkistaSahkoposti()">Lähetä</button>
+        <div class="back-button-container">
+            <button class="back-button" onclick="window.location.href='index.html'">Takaisin etusivulle</button>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

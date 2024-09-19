@@ -1,0 +1,571 @@
+link {
+    display: none;
+}
+
+body {
+    font-family: 'poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.ylapalkki {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    left: 0;
+    top: 0;
+    background: rgb(0, 0, 0);
+    display: inline-block;
+    vertical-align: middle;
+    overflow: none;
+    box-shadow: 3px 3px 4px 3px #00000069;
+}
+
+/* --------------------------------------------------- SIDEBAR STYLE ----------------------------------------------------- */
+#sidebar {
+    width: 280px;
+    position: fixed;
+    top: 0;
+    left: -280px;
+    height: 100vh;
+    z-index: 999;
+    background: #fff;
+    color: #fff;
+    transition: all 0.3s;
+    overflow-y: scroll;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+#sidebar.active {
+    left: 0;
+}
+#dismiss {
+    width: 35px;
+    height: 35px;
+    line-height: 34px;
+    text-align: center;
+    background: #111;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+#dismiss:hover {
+    background: #111;
+    color: #fff;
+}
+.overlay {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 998;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+.overlay.active {
+    display: block;
+    opacity: 1;
+}
+#sidebarCollapse {
+    background: transparent;
+    padding: 0;
+    border: none;
+}
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: #6d7fcc;
+}
+#sidebar ul.components {
+    padding: 55px 0;
+}
+#sidebar ul p {
+    color: #fff;
+    padding: 10px;
+}
+#sidebar ul li a {
+    padding: 10px 25px;
+    font-size: 1.3em;
+    display: block;
+    font-weight: 300;
+}
+#sidebar ul li a:hover {
+    color: #fff;
+    background: #d80f0f;
+}
+#sidebar ul li.active > a, a[aria-expanded="true"] {
+    color: #fff;
+    background: #d80f0f;
+}
+a[data-toggle="collapse"] {
+    position: relative;
+}
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: #6d7fcc;
+}
+ul.CTAs {
+    padding: 20px;
+}
+ul.CTAs a {
+    text-align: center;
+    font-size: 0.9em !important;
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+/* --------------------------------------------------- VALMIS PIZZA ----------------------------------------------------- */
+h1 {
+    font-size: 50px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.pizza1,
+.pizza2,
+.pizza3,
+.pizza4,
+.pizza5,
+.pizza6,
+.pizza7,
+.pizza8 {
+    display: inline-block;
+    width: 260px;
+    height: 450px;
+    border: 0.3px solid rgb(250, 250, 250);
+    padding-left: 0px;
+    padding-right: 0px;
+    margin: 20px;
+    border-style: solid;
+    border-radius: 7px;
+    image-rendering: auto;
+    box-shadow: 2px 2px 2px #ededed9e;
+    background-color:rgb(255, 255, 255);
+    transition: 0.4ms;
+    position: relative;
+}
+.pizza1 {
+    top: 40px;
+}
+
+.pizza2 {
+    top: 54px;
+}
+.pizza5 {
+    top: 15px;
+}
+.pizza6 {
+    top: 15px;
+}
+.pizza7 {
+    top: 15px;
+}
+
+.pizza3 {
+    top: 70px;
+}
+
+.pizza4 {
+    top: 70px;
+}
+
+.pizza8 {
+    top: 17px;
+}
+
+
+
+.bg {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    left: 0;
+    top: 90px;
+    background: rgb(255, 255, 255);
+    z-index: 10;
+    display: inline-block;
+    vertical-align: middle;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+img {
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+}
+
+.bg img{
+    height: 170px;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 420;
+    text-align: justify;
+}
+
+p {
+    font-size: 13px;
+    line-height: 15px;
+}
+
+.btn {
+    background-color: #000000;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    line-height: 0px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    width: 100%;
+    height: 50px;
+    transition: 0.7ms;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    font-size: 20px;
+    font-family: 'poppins', sans-serif;
+}
+
+.btn:hover {
+    background-color: #333333;
+}
+
+.container {
+    display: flex;
+    float: left;
+}
+
+.logo {
+    border-radius: 0px;
+}
+
+.ostos {
+    right: 10px;
+    width: 35px;
+    height: 30px;
+}
+
+.plusbtn {
+    color: rgb(255, 255, 255);
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    width: 20px;
+    height: 20px;
+    transition: 0.7ms;
+    position: absolute;
+    bottom: 55px;
+    right: 0px;
+    border: none;
+    border-radius: 50%;
+    font-family: 'poppins', sans-serif;
+}
+
+.miinusbtn {
+    color: rgb(255, 255, 255);
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    width: 20px;
+    height: 20px;
+    transition: 0.7ms;
+    position: absolute;
+    bottom: 55px;
+    right: 125px;
+    border: none;
+    border-radius: 50%;
+    font-family: 'poppins', sans-serif;
+}
+
+.maara {
+    color: rgb(0, 0, 0);
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    width: 20px;
+    height: 20px;
+    transition: 0.7ms;
+    position: absolute;
+    bottom: 45px;
+    right: 62px;
+    border: none;
+}
+
+.montako {
+    background-color: #4dac5000;
+    height: 45px;
+    width: 50px;
+    bottom: 0px;
+    left: -40px;
+    position: absolute;
+    font-size: 30px;
+    border: none;
+    color: #000000;
+    text-align: center;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+}
+
+.napit {
+    background-color: #ffffff;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+.shadow {
+    position: absolute;
+    background-color: #00000000;
+    height: 51px;
+    width: 220px;
+    bottom: 10px;
+    left: 20px;
+}
+
+.btn1 {
+    height: 50px;
+    bottom: 0px;
+    left: 0px;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.ympyra {
+    line-height: 0;
+    border-radius: 50%;
+    background-color: #4dac50;
+    height: 50px;
+    width: 50px;
+    bottom: 0px;
+    left: -40px;
+    position: absolute;
+    font-size: 35px;
+    border: none;
+    color: #ffffff;
+}
+
+.miinusympyra {
+    line-height: 0;
+    border-radius: 50%;
+    background-color: #da0000;
+    height: 50px;
+    width: 50px;
+    bottom: 0px;
+    left: -45px;
+    position: absolute;
+    font-size: 35px;
+    border: none;
+    color: #ffffff;
+}
+
+.ympyra:hover {
+    background-color: #459948;
+}
+
+.miinusympyra:hover {
+    background-color: #b60000;
+}
+
+.hinta {
+    color: rgb(0, 0, 0);
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    width: 20px;
+    height: 20px;
+    transition: 0.7ms;
+    position: absolute;
+    bottom: 45px;
+    left: 5px;
+    border: none;
+}
+.fantasia-hintanum,
+.pepperoni-hintanum,
+.tulinen-hintanum,
+.bbq-hintanum,
+.kasvis-hintanum,
+.juusto-hintanum,
+.hawaii-hintanum,
+.liha-hintanum {
+    background-color: #00000000;
+    line-height: 30px;
+    height: 30px;
+    width: 80px;
+    bottom: 195px;
+    left: 150px;
+    position: absolute;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    color: #000000;
+    text-align: center;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+}
+
+/*---------------------------- Fantasia pizza ----------------------------------------- */
+.popup-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+    backdrop-filter: blur(5px); /* apply a blur effect */
+    display: none;
+}
+  
+.popup {
+    width: 500px;
+    height: 400px;
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    padding: 0 30px;
+    z-index: 2;
+    overflow-y: scroll;
+}
+  
+.popup img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+}
+
+.popup-header {
+    padding-top: 5px;
+}
+
+.popup-info {
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.open-popup {
+    display: block;
+}
+.close-buttn {
+    padding-top: 20px;
+}
+.close-button {
+    color: #e30505;
+    border: 1px solid #e30505;
+    border-radius: 5px;
+    padding: 5px 5px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: absolute; /* add position property */
+    top: 10px; /* adjust top property as needed */
+    left: 10px; /* adjust right property as needed */
+}
+.close-button:hover {
+    background-color: #c90b0b;
+    color: #fff;
+}
+.container {
+    position: relative;
+    height: 20vh; /* Set the container height to 100% of the viewport height */
+}  
+.fantasia-buttn {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 15px;
+    width: 100%;
+    text-align: center;
+}  
+.to-fantasia {
+    color: white;
+    border: 1px solid #e30505;
+    border-radius: 5px;
+    padding: 5px 5px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: #c90b0b;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.pizza2 input {
+    position: relative;
+    width: 70px;
+}
+.pizza2 label {
+    position: relative;
+}
+
+#suuripohja {
+    height: 20px;
+    width: 20px;
+    left: 60px;
+    top: 5px;
+    position: relative;
+}
+
+#suuripohjapepperoni,
+#suuripohjatulinen,
+#suuripohjabbq,
+#suuripohjakasvis,
+#suuripohjajuusto,
+#suuripohjahawaii,
+#suuripohjaliha {
+    height: 20px;
+    width: 20px;
+    left: 72px;
+    top: 5px;
+    position: relative;
+}
+
+.pizza1 input,
+.pizza2 input,
+.pizza3 input,
+.pizza4 input,
+.pizza5 input,
+.pizza6 input,
+.pizza7 input,
+.pizza8 input {
+    height: 20px;
+    width: 20px;
+    left: 3px;
+    top: 5px;
+    position: relative;
+
+}
+
+#labelGLU {
+    top: 0px;
+    right: 0px;
+    position: relative;
+}

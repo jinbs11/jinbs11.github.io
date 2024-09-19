@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+/* General styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #333;
+    background-color: #fff;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image:url("https://cdn.create.vista.com/api/media/small/134826688/stock-photo-raw-pizza-dough-with-ingredients");
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    background-color: white;
+
+    /* Flexbox-asetukset */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+input[type="number"],
+textarea,
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+
+textarea {
+    height: 120px; 
+}
+
+button[type="submit"] {
+    background-color: #fff;
+    color: #ff0000;
+    border: 1px solid #ff0000;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #c90b0b;
+    color: #fff;
+}
+
+.back-button-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  
+.back-button {
+    background-color: #fff;
+    color: #ff0000;
+    border: 1px solid #ff0000;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #c90b0b;
+    color: #fff;
+}

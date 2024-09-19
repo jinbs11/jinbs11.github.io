@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="index.js"> </script>
+    <link rel="stylesheet" href="css/rekisterointi.css">
+
+    <title>Makuparatiisi / Rekisteröinti</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <button type="button" onclick="window.location.href='index.html'" class="back-button">&#8249; Takaisin</button>
+        
+        <form class="form">
+            <h2>Rekisteröidy</h2>
+
+            <div class="form-input">
+                <input id="kayttajanimi" type="text" placeholder="K&auml;ytt&auml;j&auml;nimi">
+            </div>
+
+            <div class="form-input">
+                <input id="salasana" type="password" placeholder="Salasana">
+            </div>
+
+            <button type="button" onclick="rekisteroi()">Rekisteröidy</button>
+        </form>
+
+        <p>Onko sinulla jo käyttäjä? <a href="kirjautuminen.html">Kirjaudu sisään täällä</a>!</p> 
+
+    </div>
+</body>
+
+</html>
